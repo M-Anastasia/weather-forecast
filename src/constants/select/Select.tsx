@@ -12,10 +12,11 @@ export const Select = props => {
     const Options = () => {
         const options = props.options.map((option) =>
             <li onClick={() => {
-                console.log(option + ' was clicked');
-                setPikedCity(option);
+                console.log(option[0] + ' was clicked' + option[1] + option[2]);
+                setPikedCity(option[0]);
                 props.setIsCityPiked(true);
-            }}>{option}</li>
+                props.getData(option[1], option[2]);
+            }}>{option[0]}</li>
         );
         return <ul className={props.styles.shift_options}>{options}</ul>;
     }

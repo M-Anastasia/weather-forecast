@@ -23,6 +23,10 @@
     .error_msg {
         padding-top: 12px;
     }
+    .cards_layout {
+        padding-top: 54px;
+        column-gap: 10px;
+     }
 }
 
 @media (max-width: 1360px){
@@ -41,6 +45,10 @@
     }
     .error_msg {
         padding-top: 12px;
+    }
+    .cards_layout {
+        padding-top: 54px;
+        column-gap: 10px;
     }
 }
 
@@ -63,6 +71,22 @@
     }
     .error_msg {
         padding: 0 20px;
+    }
+    .cards_layout {
+        padding: 30px 24px;
+        column-gap: 16px;
+    }
+    .arrow_left {
+        display: none;
+    }
+    .arrow_left_dis {
+        display: none;
+    }
+    .arrow_right {
+        display: none;
+    }
+    .arrow_right_dis {
+        display: none;
     }
 }
 
@@ -251,4 +275,68 @@ label {
     text-align: center;
     color: #8083A4;
     /*padding-top: 12px;*/
+}
+
+.cards_layout {
+    text-align: initial;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    overflow-x: auto;
+}
+
+.card {
+    background: #373AF5;
+    border: 2px solid #373AF5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25), 14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+    width: 174px;
+    height: 238px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    /*padding-top: 10px;*/
+    padding-left: 20px;
+}
+
+.weather_icon {
+    padding-left: 35px;
+}
+
+.temp {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-left: 87px;
+}
+
+.arrow_left {
+    padding-left: 30.59px;
+    align-self: center;
+    pointer-events: all;
+}
+
+.arrow_left_dis {
+    padding-left: 30.59px;
+    align-self: center;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.arrow_right {
+    align-self: center;
+    pointer-events: all;
+}
+
+.arrow_right_dis {
+    align-self: center;
+    pointer-events: none;
+    opacity: 0.4;
 }
