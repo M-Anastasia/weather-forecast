@@ -1,23 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #373AF5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app {
+    text-align: center;
+    background-color: #373AF5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .up {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  -webkit-writing-mode: vertical-rl;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    -webkit-writing-mode: vertical-rl;
 }
 
 .bottom {
-  margin-top: auto;
-  max-width: 100%;
-  height: auto;
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    z-index: 5;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.header-font1 {
+    /*font-family: Ubuntu, serif;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.2vw;
+    line-height: 0px;
+    color: #FFFFFF;
+}
+
+.header-font2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.2vw;
+    line-height: 122px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 40%;
+    left: 139%;
+    transform: translate(-50%, -50%);
 }

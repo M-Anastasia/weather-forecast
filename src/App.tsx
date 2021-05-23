@@ -5,12 +5,14 @@ import bottom from './icons/Academy-Weather forecast-Bg-buttom.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+      <div className="app">
+          <header className="header">
+              <p className="header-font1">Weather</p>
+              <p className="header-font2">forecast</p>
+          </header>
           <img className="up" src={up}/>
           <img className="bottom" src={bottom}/>
-      </header>
-    </div>
+      </div>
   );
 }
 
