@@ -12,6 +12,9 @@ function App() {
           </header>
           <img className="up" src={up}/>
           <img className="bottom" src={bottom}/>
+          <footer>
+              <p className="footer-font">C ЛЮБОВЬЮ ОТ MERCURY DEVELOPMENT</p>
+          </footer>
       </div>
   );
 }
