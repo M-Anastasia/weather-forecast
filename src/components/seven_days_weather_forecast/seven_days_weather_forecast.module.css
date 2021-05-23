@@ -1,0 +1,254 @@
+.background {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25), 14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+    /*width: 660px;*/
+    /*height: 524px;*/
+}
+
+@media (min-width: 1360px){
+    .background {
+        width: 660px;
+        height: 524px;
+    }
+    .title {
+        padding: 0px 50px;
+    }
+    .shift {
+        padding: 0px 50px;
+    }
+    .shift_options {
+        margin-left: 50px;
+    }
+    .error_msg {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 1360px){
+    .background {
+        width: 660px;
+        height: 524px;
+    }
+    .title {
+        padding: 0px 50px;
+    }
+    .shift {
+        padding: 0px 50px;
+    }
+    .shift_options {
+        margin-left: 50px;
+    }
+    .error_msg {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 660px){
+    .background {
+        width: 300px;
+        height: 463px;
+    }
+    .cloud {
+        padding-top: 25px;
+    }
+    .title {
+        padding: 0px 24px;
+    }
+    .shift {
+        padding: 0px 24px;
+    }
+    .shift_options {
+        margin-left: 24px;
+    }
+    .error_msg {
+        padding: 0 20px;
+    }
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2C2D76;
+    text-align: initial;
+    /*padding: 0px 50px;*/
+}
+
+.shift {
+    /*padding: 0px 5x0px;*/
+}
+
+.shift_options {
+    /*margin-left: 50px;*/
+    margin-top: 7px;
+}
+
+details {
+    position: relative;
+    width: 252px;
+    margin-right: 1rem;
+}
+
+details[open] {
+    z-index: 1;
+}
+
+summary {
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #8083A4;
+    text-align: initial;
+    width: 252px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+summary:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 0.9rem;
+    height: 0.5rem;
+    position: absolute;
+    /*transform: translate(860%, 80%);*/
+    bottom: 43%;
+    right: 62px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2929 0.292969L13.7071 1.70718L7.00001 8.41429L0.292908 1.70718L1.70712 0.292969L7.00001 5.58586L12.2929 0.292969Z' fill='%238083A4'/%3E%3C/svg%3E%0A");
+}
+
+summary:focus {
+    outline: none;
+}
+
+details[open] summary:after {
+    transform: rotate(180deg) translate(0px, 0px);
+}
+
+details[open] summary {
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid #373AF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+ul {
+    width: 100%;
+    /* background: #ddd; */
+    position: absolute;
+    top: calc(100% + .5rem);
+    left: 0;
+    padding: 0px 16px 12px 16px;
+    /* box-sizing: border-box; */
+    /* border-radius: 5px; */
+    max-height: 160px;
+    max-width: 252px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    /* Secondary 0.06 */
+
+    border: 2px solid rgba(128, 131, 164, 0.06);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(4, 5, 73, 0.16), 14px 14px 20px rgba(5, 6, 114, 0.08);
+    border-radius: 8px;
+    text-align: initial;
+}
+
+li {
+    margin: 0;
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2D76;
+    list-style-type: none;
+    pointer-events: all;
+}
+
+li:first-child {
+    padding-top: 15px;
+}
+
+li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+li:hover {
+    background: rgba(128, 131, 164, 0.06);
+    border-radius: 8px;
+}
+
+/* FAKE SELECT */
+
+summary.radios {
+    counter-reset: radios;
+}
+
+input[type=radio] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+}
+
+input[type=radio]:checked {
+    display: inline;
+}
+
+input[type=radio]:after {
+    content: attr(title);
+    display: inline;
+    font-size: 1rem;
+}
+
+ul.list {
+    counter-reset: labels;
+}
+
+label {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.select_placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083A4;
+}
+
+.cloud {
+    padding-top: 60px;
+}
+
+.error_msg {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8083A4;
+    /*padding-top: 12px;*/
+}

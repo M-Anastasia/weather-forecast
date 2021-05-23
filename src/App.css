@@ -1,7 +1,7 @@
 .app {
     text-align: center;
     background-color: #373AF5;
-    min-height: 100vh;
+    height: 1094px;
     display: flex;
     flex-direction: column;
 }
@@ -20,44 +20,145 @@
 }
 
 .header {
-    position: absolute;
-    top: 3%;
-    left: 28%;
+    /*position: absolute;*/
+    /*top: 3%;*/
+    /*left: 28%;*/
     z-index: 5;
-    display: grid;
-    grid-template-rows: auto auto;
+    padding-top: 65px;
+    /*display: grid;*/
+    /*grid-template-rows: auto auto;*/
 }
 
 .header-font1 {
     /*font-family: Ubuntu, serif;*/
     font-style: normal;
     font-weight: bold;
-    font-size: 6.2vw;
-    line-height: 0;
+    font-size: 102px;
+    line-height: 122px;
     color: #FFFFFF;
+    padding-right: 340px;
 }
 
 .header-font2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 6.2vw;
+    font-size: 102px;
     line-height: 122px;
     color: #FFFFFF;
-    position: absolute;
-    top: 40%;
-    left: 139%;
-    transform: translate(-50%, -50%);
+    padding-left: 357px;
+    margin-top: -40px;
+    /*position: absolute;*/
+    /*top: 40%;*/
+    /*left: 139%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.footer {
+    padding-top: 199px;
+}
+
+@media (max-width: 1360px){
+    .footer {
+        padding-top: 46px;
+    }
+}
+
+@media (max-width: 850px){
+    .header-font1 {
+        font-size: 74px;
+        line-height: 50px;
+        padding-right: 250px;
+    }
+    .header-font2 {
+        font-size: 74px;
+        line-height: 50px;
+        padding-left: 250px;
+        margin-top: 10px;
+    }
+    .footer {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 660px){
+    .header-font1 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-right: 110px;
+    }
+    .header-font2 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-left: 120px;
+        margin-top: 0;
+    }
+    .header {
+        padding-top: 32px;
+    }
+    .footer {
+        padding-top: 158px;
+    }
 }
 
 .footer-font {
     font-style: normal;
     font-weight: normal;
-    font-size: 0.91vw;
-    line-height: 0;
+    font-size: 14px;
+    line-height: 18px;
     color: #FFFFFF;
     opacity: 0.6;
+    /*position: absolute;*/
+    /*z-index: 7;*/
+    /*bottom: 0;*/
+    /*left:50%;*/
+    /*transform:translate(-50%, -50%);*/
+}
+
+.main {
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*top:60%;*/
+    /*left:50%;*/
+    /*transform:translate(-50%, -50%);*/
+    display: grid;
+    justify-content: center;
+    padding-top: 60px;
+    /*grid-template-columns: auto auto;*/
+    /*column-gap: 34px;*/
+}
+
+@media (min-width: 1360px){
+    .main {
+        grid-template-columns: auto auto;
+        column-gap: 34px;
+    }
+}
+
+@media (max-width: 1360px){
+    .main {
+        row-gap: 34px;
+        padding-top: 65px;
+    }
+    .app {
+        height: 1504px;
+    }
+}
+
+@media (max-width: 660px){
+    .app {
+        height: 1282px;
+    }
+    .main {
+        row-gap: 34px;
+        padding-top: 24px;
+    }
+}
+
+.layout {
     position: absolute;
-    z-index: 7;
-    bottom: 0;
-    left: 40%;
+    /*display: flex;*/
+    width: 100%;
+    height: 100%;
+    /*padding-top: 62px;*/
+    /*padding-bottom: 16px;*/
 }
