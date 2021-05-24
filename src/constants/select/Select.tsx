@@ -11,7 +11,7 @@ export const Select = props => {
     }, []);
 
     const Options = () => {
-        const options = props.options.map((option:any) =>
+        const options = props.options.map((option: any) =>
             <li onClick={() => {
                 console.log(option[0] + ' was clicked' + option[1] + option[2]);
                 setPikedCity(option[0]);
@@ -27,7 +27,7 @@ export const Select = props => {
             <summary className={props.isCityPiked ? s.piked : s.unpicked}>
                 {pikedCity}
             </summary>
-            <Options />
+            <Options/>
         </details>
     )
 }

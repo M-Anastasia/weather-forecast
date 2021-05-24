@@ -10,15 +10,14 @@ export const SevenDaysWeatherForecast = () => {
     const [cities, setCities] = useState([]);
     const [isCityPiked, setIsCityPiked] = useState(false);
     const [data, setData] = useState([[]]);
-    const [cards, setCards] = useState();
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(2);
     const windowSize = useWindowSize();
 
-    const months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sept', 'oct', 'nov', 'dec']
+    const months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sept', 'oct', 'nov', 'dec'];
 
     useEffect(() => {
-        let cities:any = [];
+        let cities: any = [];
         cities.push(['Самара', 53.195873, 50.100193]);
         cities.push(['Тольятти', 53.507836, 49.420393]);
         cities.push(['Саратов', 51.533557, 46.034257]);
@@ -27,20 +26,20 @@ export const SevenDaysWeatherForecast = () => {
         setCities(cities);
     }, []);
 
-    const getData = (lat:number, lon:number) => {
-        fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=357adc25f5d8b1411d5892dc958ebdeb', {
+    const getData = (lat: number, lon: number) => {
+        fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=aafdb5f809e160cf1aea4d8d0e4107bf', {
             method: 'GET',
         })
             .then(function (response) {
-                console.log(response);
+                // console.log(response);
                 return response.json();
             })
             .then(function (data) {
-                console.log(data);
-                let dataArray:any = [];
+                // console.log(data);
+                let dataArray: any = [];
                 [1, 2, 3, 4, 5, 6, 7].map((i) => {
                         const date = new Date(data.daily[i].dt * 1000);
-                        console.log(date);
+                        // console.log(date);
                         dataArray.push([
                             date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear(),
                             "http://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png",
@@ -52,9 +51,9 @@ export const SevenDaysWeatherForecast = () => {
     }
 
     const Cards = () => {
-        const cards:any = [];
+        const cards: any = [];
         if (windowSize.width <= 660) {
-            [0,1,2,3,4,5,6].map((i) => {
+            [0, 1, 2, 3, 4, 5, 6].map((i) => {
                     if (data[i] !== undefined) {
                         cards.push(<div className={s.card}>
                             <p className={s.date}>{data[i][0]}</p>
@@ -79,13 +78,13 @@ export const SevenDaysWeatherForecast = () => {
         return (
             <div className={s.cards_layout}>
                 <img className={(start === 0) ? s.arrow_left_dis : s.arrow_left} src={ArrowLeft} onClick={() => {
-                    setStart(start-1);
-                    setEnd(end-1);
+                    setStart(start - 1);
+                    setEnd(end - 1);
                 }}/>
                 {cards}
                 <img className={(end === 6) ? s.arrow_right_dis : s.arrow_right} src={ArrowRight} onClick={() => {
-                    setStart(start+1);
-                    setEnd(end+1);
+                    setStart(start + 1);
+                    setEnd(end + 1);
                 }}/>
             </div>
         );
@@ -100,7 +99,7 @@ export const SevenDaysWeatherForecast = () => {
                 </div>
             )
         } else return (
-            <Cards />
+            <Cards/>
         )
     }
 
@@ -130,6 +129,7 @@ function useWindowSize() {
                 height: window.innerHeight,
             });
         }
+
         // Add event listener
         window.addEventListener("resize", handleResize);
         // Call handler right away so state gets updated with initial window size

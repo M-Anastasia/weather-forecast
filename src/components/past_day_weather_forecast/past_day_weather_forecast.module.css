@@ -6,27 +6,6 @@
     /*height: 524px;*/
 }
 
-@media (min-width: 1360px){
-    .background {
-        width: 660px;
-        height: 524px;
-    }
-}
-
-@media (max-width: 1360px){
-    .background {
-        width: 660px;
-        height: 524px;
-    }
-}
-
-@media (max-width: 660px){
-    .background {
-        width: 300px;
-        height: 463px;
-    }
-}
-
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
@@ -45,4 +24,255 @@ input::-webkit-calendar-picker-indicator {
     width: 16px;
     height: 15px;
     border-width: thin;
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2C2D76;
+    text-align: initial;
+    /*padding: 0px 50px;*/
+}
+
+.shift {
+    /*padding: 0px 5x0px;*/
+}
+
+.shift_options {
+    /*margin-left: 50px;*/
+    margin-top: 7px;
+}
+
+.shift_datepicker {
+}
+
+.inputs_layout {
+    display: grid;
+}
+
+.select_placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083A4;
+}
+
+.cloud {
+    padding-top: 60px;
+}
+
+.error_msg {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8083A4;
+    /*padding-top: 12px;*/
+}
+
+.cards_layout {
+    text-align: initial;
+    padding: 0 52px;
+    /*display: grid;*/
+    /*grid-template-columns: auto auto auto auto auto auto auto;*/
+    /*overflow-x: auto;*/
+}
+
+.card {
+    background: #373AF5;
+    border: 2px solid #373AF5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25), 14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    /*padding-top: 10px;*/
+    padding-left: 20px;
+}
+
+.weather_icon {
+}
+
+.temp {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.arrow_left {
+    padding-left: 30.59px;
+    align-self: center;
+    pointer-events: all;
+}
+
+.arrow_left_dis {
+    padding-left: 30.59px;
+    align-self: center;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.arrow_right {
+    align-self: center;
+    pointer-events: all;
+}
+
+.arrow_right_dis {
+    align-self: center;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+@media (min-width: 1360px){
+    .background {
+        width: 660px;
+        height: 524px;
+    }
+    .title {
+        padding: 0px 50px;
+    }
+    .shift {
+        padding: 0px 0px 0px 50px;
+    }
+    .shift_options {
+        margin-left: 50px;
+    }
+    .error_msg {
+        padding-top: 12px;
+    }
+    .cards_layout {
+        padding-top: 54px;
+        column-gap: 10px;
+    }
+    .inputs_layout {
+        grid-template-columns: auto auto;
+    }
+    .shift_datepicker {
+        padding-right: 45px;
+    }
+    .card {
+        width: 550px;
+        height: 238px;
+    }
+    .weather_icon {
+         padding-left: 192px;
+         width: 160px;
+         margin-top: -24px;
+     }
+    .temp {
+        padding-left: 466px;
+        margin-top: -13px;
+    }
+}
+
+@media (max-width: 1360px){
+    .background {
+        width: 660px;
+        height: 524px;
+    }
+    .title {
+        padding: 0px 50px;
+    }
+    .shift {
+        padding: 0px 0px 0px 50px;
+    }
+    .shift_options {
+        margin-left: 50px;
+    }
+    .error_msg {
+        padding-top: 12px;
+    }
+    .cards_layout {
+        padding-top: 54px;
+        column-gap: 10px;
+    }
+    .inputs_layout {
+        grid-template-columns: auto auto;
+    }
+    .shift_datepicker {
+        padding-right: 45px;
+    }
+    .card {
+        width: 550px;
+        height: 238px;
+    }
+    .weather_icon {
+        padding-left: 192px;
+        width: 160px;
+        margin-top: -24px;
+    }
+    .temp {
+        padding-left: 466px;
+        margin-top: -13px;
+    }
+}
+
+@media (max-width: 660px){
+    .background {
+        width: 300px;
+        height: 576px;
+    }
+    .cloud {
+        padding-top: 25px;
+    }
+    .title {
+        padding: 0px 24px;
+    }
+    .shift {
+        padding: 0px 0px 0px 24px;
+    }
+    .shift_options {
+        margin-left: 24px;
+    }
+    .error_msg {
+        padding: 0 20px;
+    }
+    .cards_layout {
+        padding: 30px 24px;
+        column-gap: 16px;
+    }
+    .arrow_left {
+        display: none;
+    }
+    .arrow_left_dis {
+        display: none;
+    }
+    .arrow_right {
+        display: none;
+    }
+    .arrow_right_dis {
+        display: none;
+    }
+    .inputs_layout {
+        grid-template-columns: auto;
+        row-gap: 24px;
+    }
+    .shift_datepicker {
+        padding-right: 0px;
+    }
+    .card {
+        width: 252px;
+        height: 238px;
+    }
+    .weather_icon {
+        padding-left: 45px;
+        width: 160px;
+        margin-top: -15px;
+    }
+    .temp {
+        padding-left: 165px;
+        margin-top: -17px;
+    }
 }
