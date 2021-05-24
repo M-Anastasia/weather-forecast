@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './select.module.css';
 
+// @ts-ignore
 export const Select = props => {
 
     const [pikedCity, setPikedCity] = useState('');
@@ -10,7 +11,7 @@ export const Select = props => {
     }, []);
 
     const Options = () => {
-        const options = props.options.map((option) =>
+        const options = props.options.map((option:any) =>
             <li onClick={() => {
                 console.log(option[0] + ' was clicked' + option[1] + option[2]);
                 setPikedCity(option[0]);

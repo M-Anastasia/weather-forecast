@@ -26,3 +26,23 @@
         height: 463px;
     }
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 7V14H14V7H2ZM2 5H14V3H12H4H2V5ZM16 3C16 1.89543 15.1046 1 14 1V0H12V1H4V0H2V1C0.89543 1 0 1.89543 0 3V14C0 15.1046 0.89543 16 2 16H14C15.1046 16 16 15.1046 16 14V3Z' fill='%238083A4'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 15px;
+    border-width: thin;
+}
+
+input::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 7V14H14V7H2ZM2 5H14V3H12H4H2V5ZM16 3C16 1.89543 15.1046 1 14 1V0H12V1H4V0H2V1C0.89543 1 0 1.89543 0 3V14C0 15.1046 0.89543 16 2 16H14C15.1046 16 16 15.1046 16 14V3Z' fill='%238083A4'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 15px;
+    border-width: thin;
+}

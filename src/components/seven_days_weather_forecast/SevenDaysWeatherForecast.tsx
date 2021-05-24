@@ -18,7 +18,7 @@ export const SevenDaysWeatherForecast = () => {
     const months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sept', 'oct', 'nov', 'dec']
 
     useEffect(() => {
-        let cities = [];
+        let cities:any = [];
         cities.push(['Самара', 53.195873, 50.100193]);
         cities.push(['Тольятти', 53.507836, 49.420393]);
         cities.push(['Саратов', 51.533557, 46.034257]);
@@ -27,7 +27,7 @@ export const SevenDaysWeatherForecast = () => {
         setCities(cities);
     }, []);
 
-    const getData = (lat, lon) => {
+    const getData = (lat:number, lon:number) => {
         fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=357adc25f5d8b1411d5892dc958ebdeb', {
             method: 'GET',
         })
@@ -37,7 +37,7 @@ export const SevenDaysWeatherForecast = () => {
             })
             .then(function (data) {
                 console.log(data);
-                let dataArray = [];
+                let dataArray:any = [];
                 [1, 2, 3, 4, 5, 6, 7].map((i) => {
                         const date = new Date(data.daily[i].dt * 1000);
                         console.log(date);
@@ -52,7 +52,7 @@ export const SevenDaysWeatherForecast = () => {
     }
 
     const Cards = () => {
-        const cards = [];
+        const cards:any = [];
         if (windowSize.width <= 660) {
             [0,1,2,3,4,5,6].map((i) => {
                     if (data[i] !== undefined) {
@@ -118,8 +118,8 @@ function useWindowSize() {
     // Initialize state with undefined width/height so server and client renders match
     // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
     const [windowSize, setWindowSize] = useState({
-        width: undefined,
-        height: undefined,
+        width: 0,
+        height: 0,
     });
     useEffect(() => {
         // Handler to call on window resize

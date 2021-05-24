@@ -1,0 +1,47 @@
+.datepicker {
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 252px;
+    height: 48px;
+    /* font-family: Ubuntu; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 10px 0px 16px;
+    color: #8083A4;
+    text-align: initial;
+}
+
+.datepicker_text {
+    width: 200px;
+    background: rgb(248, 248, 249);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083A4;
+    position: absolute;
+    text-align: initial;
+    margin-top: -36px;
+    margin-left: 221px;
+}
+
+.datepicker_text_none {
+    visibility: hidden;
+}
+
+.focused {
+    background: rgba(128, 131, 164, 0.06);
+}
+
+.img_shift {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    /* margin-right: 10px; */
+    margin-top: 17px;
+    margin-left: -31px;
+}
