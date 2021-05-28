@@ -31,6 +31,7 @@
 
 .header-font1 {
     /*font-family: Ubuntu, serif;*/
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 102px;
@@ -40,6 +41,7 @@
 }
 
 .header-font2 {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 102px;
@@ -101,6 +103,7 @@
 }
 
 .footer-font {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

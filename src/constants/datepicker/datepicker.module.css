@@ -23,6 +23,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    font-family: Ubuntu;
     /*padding: 0px 10px 0px 16px;*/
     /*color: #8083A4;*/
     /*text-align: initial;*/
@@ -31,6 +32,7 @@
 .datepicker_text {
     width: 191px;
     background: rgb(248, 248, 249);
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

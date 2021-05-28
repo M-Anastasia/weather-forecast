@@ -27,6 +27,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .title {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -53,6 +54,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .select_placeholder {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -65,6 +67,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .error_msg {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -91,6 +94,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .date {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -104,6 +108,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .temp {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;

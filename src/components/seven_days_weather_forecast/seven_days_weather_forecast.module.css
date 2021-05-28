@@ -91,6 +91,7 @@
 }
 
 .title {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -198,6 +199,7 @@ ul {
 }
 
 li {
+    font-family: Ubuntu;
     margin: 0;
     padding: 1rem 0;
     font-style: normal;
@@ -256,6 +258,7 @@ label {
 }
 
 .select_placeholder {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -268,6 +271,7 @@ label {
 }
 
 .error_msg {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -295,6 +299,7 @@ label {
 }
 
 .date {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -309,6 +314,7 @@ label {
 }
 
 .temp {
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
