@@ -7,13 +7,16 @@
 }
 
 .up {
-    position: absolute;
-    max-width: 100%;
+    position: fixed;    
+    top: 0;
+    width: -webkit-fill-available;
     height: auto;
     -webkit-writing-mode: vertical-rl;
 }
 
 .bottom {
+    position: fixed;    
+    bottom: 0;
     margin-top: auto;
     max-width: 100%;
     height: auto;
