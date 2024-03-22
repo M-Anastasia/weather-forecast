@@ -1,7 +1,6 @@
 .app {
     text-align: center;
     background-color: #373AF5;
-    height: 1094px;
     display: flex;
     flex-direction: column;
 }
