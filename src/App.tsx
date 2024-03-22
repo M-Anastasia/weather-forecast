@@ -20,7 +20,7 @@ function App() {
                     <PastDayWeatherForecast/>
                 </main>
                 <footer className="footer">
-                    <p className="footer-font">C ЛЮБОВЬЮ ОТ MERCURY DEVELOPMENT</p>
+                    <p className="footer-font">MERCURY DEVELOPMENT</p>
                 </footer>
             </div>
         </div>
